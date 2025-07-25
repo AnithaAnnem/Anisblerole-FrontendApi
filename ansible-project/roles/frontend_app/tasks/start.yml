@@ -1,0 +1,7 @@
+---
+- name: Start frontend app
+  shell: |
+    cd {{ app_dir }}
+    nohup npm start &
+  async: 0
+  poll: 0

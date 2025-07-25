@@ -1,0 +1,13 @@
+---
+- name: json file configuration
+  template: 
+    src: package.json.j2
+    dest: "{{ app_dir }}"
+    owner: ubuntu
+    group: ubuntu
+    mode: '0644' 
+
+- name: Build the frontend app
+  make:
+    chdir: "{{ app_dir }}"
+    target: build

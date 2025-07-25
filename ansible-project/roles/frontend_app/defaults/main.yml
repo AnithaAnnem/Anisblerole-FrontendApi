@@ -1,0 +1,4 @@
+---
+repo_url: https://github.com/OT-MICROSERVICES/frontend.git
+app_dir: /home/ubuntu/frontend
+ansible_host: "35.172.119.192"

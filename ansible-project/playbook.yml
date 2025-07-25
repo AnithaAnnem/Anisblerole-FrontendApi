@@ -1,0 +1,6 @@
+---
+- name: Test frontend_app role
+  hosts: frontend_servers
+  become: true
+  roles:
+    - frontend_app

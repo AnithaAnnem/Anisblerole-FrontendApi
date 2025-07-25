@@ -1,0 +1,5 @@
+---
+- name: Clone frontend repo
+  git:
+    repo: "{{ repo_url }}"
+    dest: "{{ app_dir }}"

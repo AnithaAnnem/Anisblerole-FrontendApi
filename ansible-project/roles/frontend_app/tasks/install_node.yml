@@ -1,0 +1,13 @@
+---
+- name: Install Node.js
+  apt:
+    name: nodejs
+    state: present
+
+- name: Check Node.js version
+  command: nodejs -v
+  register: nodejs_version
+  changed_when: false
+
+- debug:
+    msg: "Node.js installed: {{ nodejs_version.stdout }}"

@@ -1,0 +1,13 @@
+---
+- name: Install NPM
+  apt:
+    name: npm
+    state: present
+
+- name: Check NPM version
+  command: npm -v
+  register: npm_version
+  changed_when: false
+
+- debug:
+    msg: "NPM installed: {{ npm_version.stdout }}"

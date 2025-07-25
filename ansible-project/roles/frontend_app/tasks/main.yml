@@ -1,0 +1,7 @@
+---
+- import_tasks: update.yml
+- import_tasks: clone.yml
+- import_tasks: install_node.yml
+- import_tasks: install_npm.yml
+- import_tasks: build.yml
+- import_tasks: start.yml
